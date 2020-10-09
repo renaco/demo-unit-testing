@@ -1,3 +1,8 @@
+/**
+ * @param {number} numberPosition
+ * @return {number}
+ **/
+
 export default function fibonacci(numberPosition) {
 
     let iterationsCounter = numberPosition - 1;

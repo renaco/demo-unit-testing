@@ -1,7 +1,7 @@
 /**
  * @param {number} number
  * @return {number}
- */
+ **/
 
 export default function factorial(number) {
   let result = 1;

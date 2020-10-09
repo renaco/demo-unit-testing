@@ -8,9 +8,10 @@
 yarn install
 ```
 
-
 2 Run test
 
 ```bash
 yarn test
 ```
+
+Note: never use 'test*' as filename
