@@ -1,19 +1,20 @@
 export default function fibonacci(numberPosition) {
-    if (numberPosition === 1) {
-        return 1;
-    }
 
     let iterationsCounter = numberPosition - 1;
-    let fib = null;
-    let fibPrev = 1;
-    let fibPrevPrev = 0;
+    let fibonacci = null;
+    let fibonacciPenultimate = 1;
+    let fibonacciAntePenultimate = 0;
 
-    while (iterationsCounter) {
-        fib = fibPrev + fibPrevPrev;
-        fibPrevPrev = fibPrev;
-        fibPrev = fib;
-        iterationsCounter -= 1;
-    }
+  if (numberPosition === 1) {
+    return 1;
+  }
 
-    return fib;
+  while (iterationsCounter) {
+    fibonacci = fibonacciPenultimate + fibonacciAntePenultimate;
+    fibonacciAntePenultimate = fibonacciPenultimate;
+    fibonacciPenultimate = fibonacci;
+    iterationsCounter -= 1;
+  }
+
+  return fibonacci;
 }
