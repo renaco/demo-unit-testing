@@ -1,6 +1,6 @@
 {
-  "name": "js-algorithms",
-  "version": "1.0.0",
+  "name": "demo-unit-test",
+  "version": "1.2.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
